@@ -48,7 +48,6 @@ fun TasksScreen(
     val tasks = viewModel
         .tasks
         .collectAsStateWithLifecycle(emptyList())
-    val options by viewModel.options
 
     Scaffold(
         floatingActionButton = {
@@ -80,7 +79,7 @@ fun TasksScreen(
                 items(tasks.value, key = { it.id }) { taskItem ->
                     TaskItem(
                         task = taskItem,
-                        options = options,
+                        options = listOf(),
                         onCheckChange = { viewModel.onTaskCheckChange(taskItem) },
                         onActionClick = { action ->
                             viewModel.onTaskActionClick(
