@@ -23,4 +23,4 @@ In order for this app to work, you will need to create a [Firebase project](http
 
 ## Contact
 
-Twitter: [@coelho_dev](https://twitter.com/coelho_dev)
+Twitter: [@luizhbfilho](https://twitter.com/luizhbfilho)
